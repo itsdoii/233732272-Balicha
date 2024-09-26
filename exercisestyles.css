@@ -1,0 +1,18 @@
+body {
+    font-family: monospace;
+    margin: 10px;
+}
+h1, h2, ul {
+    font-family: cursive;
+}
+ul {
+    color: chocolate;
+}
+h2 {
+    color: blue;
+}
+img {
+    flex-wrap: nowrap;
+    margin-left: 1300px;
+    size-adjust:;
+}
