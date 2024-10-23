@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form so we can ensure of our services</p>
+
+    <form id="survey-form">
+    <fieldset>
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" required placeholder="Enter your full name">
+        
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" required placeholder="Enter your email address">
+
+        <label for="number" id="number-label">Mobile/Telephone Number:</label>
+        <input type="number" id="number" required min="10000000000" max="99999999999" placeholder="Enter your mobile or telephone number">
+
+        <label for="dropdown">Membership:</label>
+        <select id="dropdown">
+            <option value="" disabled selected>Please select your membership plan</option>
+            <option value="option1">Premium Membership</option>
+            <option value="option2">Basic Membership</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <label>Sex:</label>
+        <div class="form-group-inline1">
+            <label>
+                <input type="radio" name="radio-group" value="male" class="inline" unchecked> Male
+            </label>
+            <label>
+                <input type="radio" name="radio-group" value="female" class="inline" unchecked> Female
+            </label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <label>How would you rate your membership perks?:</label>
+        <div class="checkboxes">
+            <label>
+                <input type="checkbox" name="checkbox1" value="checkbox1" class="inline"> Very Unsatisfied
+            </label>
+            <label>
+                <input type="checkbox" name="checkbox2" value="checkbox2" class="inline"> Unsatisfied
+            </label>
+            <label>
+                <input type="checkbox" name="checkbox3" value="checkbox3" class="inline"> Neutral
+            </label>
+            <label>
+                <input type="checkbox" name="checkbox4" value="checkbox4"class="inline"> Satisfied
+            </label>
+            <label>
+                <input type="checkbox" name="checkbox5" value="checkbox5" class="inline"> Very Satisfied
+            </label>
+        </div>
+    </fieldset>
+        <label for="comments">Comments/Suggestions:</label>
+        <textarea id="comments" placeholder="Enter your comments here or suggestions here"></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
