@@ -37,6 +37,10 @@ body {
     text-align: center;
 }
 
+#nav {
+    background-color: blueviolet;
+}
+
 section ul {
     font-size: x-large;
     text-align: center;
@@ -72,6 +76,10 @@ section {
 section img {
     max-width: 100%;
     height: auto; 
+}
+
+section img:hover {
+    transform: scale(120%);
 }
 
 #video {

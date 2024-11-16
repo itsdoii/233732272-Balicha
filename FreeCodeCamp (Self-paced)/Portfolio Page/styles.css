@@ -7,6 +7,7 @@ body, html {
 h1, h2, h3 {
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 ul {
@@ -17,11 +18,16 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: skyblue;
+    text-decoration: underline;
+}
+
 #navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #333;
+    background-color:#0d1117;
     color: white;
     text-align: center;
 }
@@ -41,32 +47,36 @@ a {
     font-weight: bold;
 }
 
+
 #welcome-section {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #24292e; 
 }
 
 #welcome-section h1 {
     font-size: 3em;
-    color: #333;
+    color: white;
+    display: fixed;
 }
 
 #dylan-img {
     width: 150px; 
     height: auto; 
+    margin-top: 300px;
+    margin-right: 300px;
 }
 
 #projects {
     padding: 50px;
-    background-color: #fff;
+    background-color: #2b3137;
 }
 
 .project-tile {
-    margin: 20px 0;
-    padding: 20px;
+    margin: 10px 0;
+    padding: 10px;
     border: 1px solid #ddd;
     text-align: center;
 }
@@ -87,10 +97,14 @@ footer {
 
 @media (max-width: 600px) {
     #navbar ul {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .project-tile {
         padding: 10px;
+    }
+
+    #dylan-img {
+        align-self: center;
     }
 }
